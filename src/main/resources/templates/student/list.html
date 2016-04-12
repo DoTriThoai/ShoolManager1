@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Student</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<!--<h1 th:text="${oneClass.id}"></h1>-->
+<!--<h1 th:text="${oneClass.class_name}"></h1>-->
+
+<table border="1">
+    <tr>
+        <td>Id</td>
+        <td>Student Name</td>
+        <td>Student Dob</td>
+    </tr>
+    <tr th:each="stu : ${lstStudents}">
+        <td th:text="${stu.id}"></td>
+        <td th:text="${stu.studentName}"></td>
+        <td th:text="${stu.studentDob}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
