@@ -7,5 +7,6 @@ public class TestController {
     public void test(){
         System.out.println("Test push to Github");
         System.out.println("Test push to Github 1");
+        System.out.println("Test push to Github 2");
     }
 }
