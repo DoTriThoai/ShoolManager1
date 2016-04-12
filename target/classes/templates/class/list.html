@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Class Table</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+    <h2 th:text="${message}"></h2>
+    <h1 th:text="${oneClass.id}"></h1>
+    <h1 th:text="${oneClass.className}"></h1>
+
+    <table border="1">
+        <tr>
+            <td>Id</td>
+            <td>Class Name</td>
+        </tr>
+        <tr th:each="cls : ${lstClasses}">
+            <td th:text="${cls.id}"></td>
+            <td th:text="${cls.className}"></td>
+        </tr>
+    </table>
+
+</body>
+</html>
